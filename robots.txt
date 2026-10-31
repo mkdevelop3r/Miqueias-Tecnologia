@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miqueiasoliveira.netlify.app/sitemap.xml

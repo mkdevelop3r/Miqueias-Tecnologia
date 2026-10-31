@@ -5,17 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Miquéias Oliveira — Desenvolvedor de Soluções Tecnológicas</title>
   <meta name="description" content="Desenvolvimento de sistemas, automações e soluções digitais personalizadas para empresas que desejam otimizar processos e evoluir com tecnologia.">
+  <link rel="canonical" href="https://miqueiasoliveira.netlify.app/">
+  <meta name="author" content="Miquéias Oliveira">
+  <meta name="theme-color" content="#0a0b0d">
+
+  <!-- Prévia ao compartilhar (WhatsApp, LinkedIn, Instagram, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Miquéias Oliveira">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://miqueiasoliveira.netlify.app/">
   <meta property="og:title" content="Miquéias Oliveira — Desenvolvedor de Soluções Tecnológicas">
   <meta property="og:description" content="Sistemas, automações, dados e IA para resolver desafios reais da sua empresa.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/miqueias-hero.jpg">
-  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://miqueiasoliveira.netlify.app/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Miquéias Oliveira — Sua empresa tem desafios. A tecnologia pode ser a solução.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miquéias Oliveira — Desenvolvedor de Soluções Tecnológicas">
+  <meta name="twitter:description" content="Sistemas, automações, dados e IA para resolver desafios reais da sua empresa.">
+  <meta name="twitter:image" content="https://miqueiasoliveira.netlify.app/assets/img/og-image.jpg">
+
+  <!-- Dados estruturados para buscadores -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Miquéias Oliveira — Desenvolvimento de Soluções Tecnológicas",
+    "url": "https://miqueiasoliveira.netlify.app/",
+    "image": "https://miqueiasoliveira.netlify.app/assets/img/og-image.jpg",
+    "description": "Desenvolvimento de sistemas, automações e soluções digitais personalizadas para empresas.",
+    "email": "dmiqueias635@gmail.com",
+    "telephone": "+55 71 98170-5860",
+    "areaServed": "BR",
+    "founder": {
+      "@type": "Person",
+      "name": "Miquéias Oliveira",
+      "jobTitle": "Desenvolvedor de Soluções Tecnológicas",
+      "sameAs": [
+        "https://www.linkedin.com/in/miqu%C3%A9ias-oliveira-305495248/",
+        "https://www.instagram.com/miqueias_dev/"
+      ]
+    }
+  }
+  </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- Métricas: inserir aqui o script de analytics (ex.: Google Analytics 4 ou Plausible) na publicação -->
+  <!-- Google Analytics 4 — carrega só no domínio de produção, para testes locais não entrarem nas métricas -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    if (location.hostname === "miqueiasoliveira.netlify.app") {
+      const ga = document.createElement("script");
+      ga.async = true;
+      ga.src = "https://www.googletagmanager.com/gtag/js?id=G-YJMD4ZSSD9";
+      document.head.appendChild(ga);
+      gtag("js", new Date());
+      gtag("config", "G-YJMD4ZSSD9");
+    }
+  </script>
 </head>
 <body>
 
@@ -46,7 +96,7 @@
         <a href="#projetos">Projetos</a>
         <a href="#sobre">Sobre mim</a>
         <a href="#contato">Contato</a>
-        <a href="#contato" class="btn btn--primary nav__cta">Fale comigo</a>
+        <a href="#contato" class="btn btn--primary nav__cta" data-track="cta-menu">Fale comigo</a>
       </nav>
       <button class="nav__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
         <span></span><span></span>
@@ -67,7 +117,7 @@
           <h1 class="display-mega">Sua empresa tem desafios. A tecnologia pode ser a solução.</h1>
           <p class="hero__sub">Desenvolvimento de sistemas, automações e soluções digitais personalizadas para empresas que desejam otimizar processos e evoluir com tecnologia.</p>
           <div class="hero__actions">
-            <a href="#contato" class="btn btn--primary btn--lg">Vamos conversar sobre seu projeto</a>
+            <a href="#contato" class="btn btn--primary btn--lg" data-track="cta-hero">Vamos conversar sobre seu projeto</a>
             <a href="#projetos" class="btn btn--outline-dark btn--lg">Ver projetos</a>
           </div>
         </div>

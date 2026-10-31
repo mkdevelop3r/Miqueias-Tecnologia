@@ -66,6 +66,20 @@ if ("IntersectionObserver" in window) {
   revealTargets.forEach((el) => { el.classList.add("reveal"); observer.observe(el); });
 }
 
+// ===== Métricas (Google Analytics 4) =====
+// Cliques em contatos viram "contact_click"; botões que levam ao formulário viram "cta_click".
+function track(event, params) {
+  if (typeof window.gtag === "function") window.gtag("event", event, params);
+}
+
+document.querySelectorAll("[data-track]").forEach((el) => {
+  el.addEventListener("click", () => {
+    const name = el.dataset.track;
+    if (name.startsWith("cta-")) track("cta_click", { location: name.slice(4) });
+    else track("contact_click", { method: name });
+  });
+});
+
 // ===== Formulário de contato =====
 // Envia para o Netlify Forms (painel + notificação por e-mail) e oferece continuar a conversa no WhatsApp.
 const form = document.getElementById("contactForm");
@@ -114,6 +128,7 @@ form.addEventListener("submit", async (e) => {
       body: new URLSearchParams(formData).toString(),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    track("generate_lead", { method: "formulario" });
 
     form.querySelectorAll(".field").forEach((field) => { field.hidden = true; });
     submitBtn.hidden = true;
