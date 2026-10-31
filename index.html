@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miquéias Oliveira — Desenvolvedor de Soluções Tecnológicas</title>
+  <meta name="description" content="Desenvolvimento de sistemas, automações e soluções digitais personalizadas para empresas que desejam otimizar processos e evoluir com tecnologia.">
+  <meta property="og:title" content="Miquéias Oliveira — Desenvolvedor de Soluções Tecnológicas">
+  <meta property="og:description" content="Sistemas, automações, dados e IA para resolver desafios reais da sua empresa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/miqueias-hero.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Métricas: inserir aqui o script de analytics (ex.: Google Analytics 4 ou Plausible) na publicação -->
+</head>
+<body>
+
+  <!-- Logo MO: letras em currentColor (claro/escuro), alvo e órbita em azul -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 112 64">
+      <path d="M60 52 C 36 60, 8 58, 5 46 C 3 38, 12 28, 24 22" fill="none" stroke="#0052ff" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M30 14 C 50 5, 76 2, 86 9" fill="none" stroke="#0052ff" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M17 50 V17 L33 31 L49 17 V50" fill="none" stroke="currentColor" stroke-width="8"/>
+      <circle cx="73" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="73" cy="34" r="8" fill="none" stroke="#0052ff" stroke-width="3.5"/>
+      <circle cx="73" cy="34" r="2.6" fill="#0052ff"/>
+      <path d="M75 32 L97 10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M90.5 13.5 L91.5 4.5 L96.5 1.5 L95.5 9 Z M94 17 L103 16 L106 11 L98.5 12 Z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- ===== Navegação ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__brand" aria-label="Miquéias Oliveira — início">
+        <svg class="nav__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <span>Miquéias Oliveira</span>
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn--primary nav__cta">Fale comigo</a>
+      </nav>
+      <button class="nav__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="badge badge--dark">Miquéias Oliveira · Desenvolvedor de Soluções Tecnológicas</span>
+          <h1 class="display-mega">Sua empresa tem desafios. A tecnologia pode ser a solução.</h1>
+          <p class="hero__sub">Desenvolvimento de sistemas, automações e soluções digitais personalizadas para empresas que desejam otimizar processos e evoluir com tecnologia.</p>
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary btn--lg">Vamos conversar sobre seu projeto</a>
+            <a href="#projetos" class="btn btn--outline-dark btn--lg">Ver projetos</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <figure class="hero__photo">
+            <img src="assets/img/miqueias-hero.jpg" alt="Miquéias Oliveira sorrindo, de braços cruzados" width="1000" height="1500" fetchpriority="high">
+          </figure>
+
+          <!-- Mockup VeloFunil: funil -->
+          <div class="ui-card ui-card--funnel" aria-hidden="true">
+            <div class="ui-card__head">
+              <span class="ui-dot"></span><span class="ui-card__title">VeloFunil · Funil comercial</span>
+            </div>
+            <div class="funnel">
+              <div class="funnel__col"><span class="funnel__label">A contatar</span><span class="mono">R$ 31,6 mil</span><i style="--w:100%"></i></div>
+              <div class="funnel__col"><span class="funnel__label">Proposta enviada</span><span class="mono">R$ 23,5 mil</span><i style="--w:74%"></i></div>
+              <div class="funnel__col"><span class="funnel__label">Negociação</span><span class="mono">R$ 19 mil</span><i style="--w:60%"></i></div>
+              <div class="funnel__col"><span class="funnel__label">Fechado ganho</span><span class="mono up">R$ 11,2 mil</span><i style="--w:35%" class="is-won"></i></div>
+            </div>
+          </div>
+
+          <!-- Mockup VeloFunil: tarefas -->
+          <div class="ui-card ui-card--tasks" aria-hidden="true">
+            <span class="ui-card__title">Próximas tarefas</span>
+            <ul class="tasks">
+              <li><span class="check is-done"></span>Retornar proposta</li>
+              <li><span class="check"></span>Reunião de diagnóstico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Problemas ===== -->
+    <section class="section" id="problemas">
+      <div class="container">
+        <header class="section__head">
+          <span class="badge">Desafios comuns</span>
+          <h2 class="display-lg">Sua operação pode funcionar melhor.</h2>
+          <p class="section__lead">A tecnologia não é apenas uma ferramenta: é um meio de melhorar os resultados da empresa. Alguma dessas situações parece familiar?</p>
+        </header>
+        <ul class="problems">
+          <li class="problem">
+            <span class="icon-plate"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <p>Processos manuais que consomem muito tempo.</p>
+          </li>
+          <li class="problem">
+            <span class="icon-plate"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="13" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/></svg></span>
+            <p>Informações espalhadas em várias planilhas e ferramentas.</p>
+          </li>
+          <li class="problem">
+            <span class="icon-plate"><svg viewBox="0 0 24 24"><rect x="2" y="8" width="7" height="8" rx="1.5"/><rect x="15" y="8" width="7" height="8" rx="1.5"/><path d="M9 12h2M13 12h2"/></svg></span>
+            <p>Sistemas que não se comunicam.</p>
+          </li>
+          <li class="problem">
+            <span class="icon-plate"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <p>Falta de controle e acompanhamento dos indicadores.</p>
+          </li>
+          <li class="problem">
+            <span class="icon-plate"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.8c1.6.8 2.6 2.6 3 5.2"/></svg></span>
+            <p>Dificuldade para organizar clientes, vendas e tarefas.</p>
+          </li>
+          <li class="problem">
+            <span class="icon-plate"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span>
+            <p>Necessidade de um sistema específico para a operação.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Soluções ===== -->
+    <section class="section section--soft" id="solucoes">
+      <div class="container">
+        <header class="section__head">
+          <span class="badge">Soluções e serviços</span>
+          <h2 class="display-lg">Como a tecnologia pode ajudar sua empresa.</h2>
+        </header>
+        <div class="services">
+          <article class="card service">
+            <span class="icon-plate icon-plate--blue"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></span>
+            <h3 class="title-lg">Desenvolvimento de sistemas</h3>
+            <p>Sistemas web personalizados para atender às necessidades de cada negócio.</p>
+            <ul class="chips"><li>Sistemas de gestão</li><li>CRMs</li><li>Plataformas internas</li><li>Acompanhamento de processos</li><li>Aplicações web</li></ul>
+          </article>
+          <article class="card service">
+            <span class="icon-plate icon-plate--blue"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h3 class="title-lg">Automação e Inteligência Artificial</h3>
+            <p>Soluções para reduzir tarefas repetitivas, conectar ferramentas e tornar processos mais inteligentes.</p>
+            <ul class="chips"><li>Automação de processos</li><li>Integrações entre sistemas</li><li>Assistentes inteligentes</li><li>Automações com IA</li><li>Fluxos de atendimento</li></ul>
+          </article>
+          <article class="card service">
+            <span class="icon-plate icon-plate--blue"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M5 16l4-5 4 3 6-8"/></svg></span>
+            <h3 class="title-lg">Dados e Business Intelligence</h3>
+            <p>Transformação de dados em informações que auxiliam a gestão e a tomada de decisões.</p>
+            <ul class="chips"><li>Dashboards gerenciais</li><li>Indicadores de desempenho</li><li>Relatórios automatizados</li><li>Organização de dados</li><li>Análise de resultados</li></ul>
+          </article>
+          <article class="card service">
+            <span class="icon-plate icon-plate--blue"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+            <h3 class="title-lg">Produtos digitais</h3>
+            <p>Aplicações e soluções digitais que podem evoluir de acordo com as necessidades do mercado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projetos ===== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section__head">
+          <span class="badge">Projetos em destaque</span>
+          <h2 class="display-lg">Problemas reais, soluções em uso.</h2>
+        </header>
+
+        <!-- VeloFunil -->
+        <article class="project">
+          <figure class="project__visual project__visual--shot">
+            <div class="browser">
+              <div class="browser__bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="assets/img/velofunil.jpg" alt="Página do VeloFunil com o funil de vendas mostrando oportunidades por etapa" width="980" height="560" loading="lazy">
+            </div>
+          </figure>
+          <div class="project__body">
+            <span class="status status--live">Em produção</span>
+            <h3 class="display-sm">VeloFunil</h3>
+            <p class="project__lead">CRM B2B desenvolvido para organizar processos comerciais e apoiar a gestão de oportunidades.</p>
+            <h4 class="title-sm">Funcionalidades implementadas</h4>
+            <ul class="checklist">
+              <li>Gestão de empresas e leads.</li>
+              <li>Organização de oportunidades em funil comercial.</li>
+              <li>Gerenciamento de tarefas e acompanhamentos.</li>
+              <li>Controle de usuários e autenticação.</li>
+            </ul>
+            <ul class="chips chips--tech"><li>Next.js</li><li>TypeScript</li><li>Supabase</li></ul>
+          </div>
+        </article>
+
+        <!-- Vozzi -->
+        <article class="project project--reverse">
+          <div class="project__visual project__visual--soft" aria-hidden="true">
+            <div class="ui-card ui-card--light ui-card--voice">
+              <span class="ui-card__title">Conceito de interação</span>
+              <div class="voice">
+                <div class="voice__bubble">“Gastei 45 reais no almoço hoje.”</div>
+                <div class="voice__confirm">
+                  <span class="caption">Confirmar registro?</span>
+                  <div class="voice__row"><span>Despesa · Alimentação</span><span class="mono down">− R$ 45,00</span></div>
+                </div>
+              </div>
+              <span class="ui-card__note">Ilustração da proposta — produto em desenvolvimento</span>
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="status status--dev">Em desenvolvimento</span>
+            <h3 class="display-sm">Vozzi</h3>
+            <p class="project__lead">Aplicativo de gestão financeira com proposta de interação por voz e inteligência artificial.</p>
+            <h4 class="title-sm">Proposta do projeto</h4>
+            <p>Permitir que o usuário registre despesas e receitas por meio de comandos de voz, com interpretação das informações e confirmação antes do registro.</p>
+            <h4 class="title-sm">Tecnologias e recursos previstos</h4>
+            <ul class="chips chips--tech"><li>Inteligência artificial</li><li>Processamento de linguagem natural</li><li>Banco de dados</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Sobre mim ===== -->
+    <section class="section section--soft" id="sobre">
+      <div class="container about">
+        <figure class="about__photo">
+          <img src="assets/img/miqueias-sobre.jpg" alt="Miquéias Oliveira sentado em uma poltrona, sorrindo" width="1000" height="1500" loading="lazy">
+        </figure>
+        <div class="about__text">
+          <span class="badge">Sobre mim</span>
+          <h2 class="display-lg">Tecnologia aplicada a problemas reais.</h2>
+          <p>Sou <strong>Miquéias Oliveira</strong>, desenvolvedor de soluções tecnológicas e analista de dados.</p>
+          <p>Tenho interesse em desenvolver sistemas, automatizar processos e transformar informações em soluções que facilitem a rotina das empresas.</p>
+          <p>Acredito que a tecnologia precisa ir além do código: ela deve resolver problemas reais, melhorar processos e gerar valor para os negócios.</p>
+          <p>Meu trabalho une desenvolvimento de software, automação, dados e inteligência artificial para construir soluções alinhadas às necessidades de cada operação.</p>
+          <ul class="chips"><li>Desenvolvimento de software</li><li>Automação</li><li>Dados</li><li>Inteligência artificial</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Processo ===== -->
+    <section class="section" id="processo">
+      <div class="container">
+        <header class="section__head">
+          <span class="badge">Como funciona</span>
+          <h2 class="display-lg">Do diagnóstico à evolução da solução.</h2>
+        </header>
+        <ol class="steps">
+          <li class="step"><span class="step__num mono">01</span><h3 class="title-md">Diagnóstico</h3><p>Entendimento do negócio, dos processos e do problema que precisa ser resolvido.</p></li>
+          <li class="step"><span class="step__num mono">02</span><h3 class="title-md">Planejamento</h3><p>Definição da solução, funcionalidades, tecnologias e escopo do projeto.</p></li>
+          <li class="step"><span class="step__num mono">03</span><h3 class="title-md">Desenvolvimento</h3><p>Construção da solução, testes e validações.</p></li>
+          <li class="step"><span class="step__num mono">04</span><h3 class="title-md">Entrega</h3><p>Apresentação da solução, orientação para utilização e disponibilização conforme o escopo acordado.</p></li>
+          <li class="step"><span class="step__num mono">05</span><h3 class="title-md">Evolução</h3><p>Possibilidade de melhorias, novas funcionalidades e suporte conforme a contratação.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section class="contact" id="contato">
+      <div class="container contact__grid">
+        <div class="contact__text">
+          <h2 class="display-md">Vamos transformar seu desafio em uma solução tecnológica?</h2>
+          <p>Conte um pouco sobre sua empresa e o desafio que deseja resolver. Vamos conversar sobre como a tecnologia pode ajudar.</p>
+          <ul class="channels">
+            <li><a href="https://wa.me/5571981705860" target="_blank" rel="noopener" data-track="whatsapp">
+              <span class="icon-plate icon-plate--dark"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg></span>WhatsApp</a></li>
+            <li><a href="mailto:dmiqueias635@gmail.com" data-track="email">
+              <span class="icon-plate icon-plate--dark"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>E-mail</a></li>
+            <li><a href="https://www.linkedin.com/in/miqu%C3%A9ias-oliveira-305495248/" target="_blank" rel="noopener" data-track="linkedin">
+              <span class="icon-plate icon-plate--dark"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></span>LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/miqueias_dev/" target="_blank" rel="noopener" data-track="instagram">
+              <span class="icon-plate icon-plate--dark"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg></span>Instagram</a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input id="empresa" name="empresa" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="contatoInput">E-mail ou WhatsApp</label>
+            <input id="contatoInput" name="contato" type="text" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="desafio">Descreva seu desafio</label>
+            <textarea id="desafio" name="desafio" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Enviar mensagem</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="nav__brand"><svg class="nav__logo" aria-hidden="true"><use href="#logo"/></svg><span>Miquéias Oliveira</span></a>
+      <nav class="footer__links" aria-label="Rodapé">
+        <a href="#solucoes">Soluções</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#contato">Contato</a>
+      </nav>
+      <p class="footer__legal">© <span id="year">2026</span> Miquéias Oliveira · Desenvolvedor de Soluções Tecnológicas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

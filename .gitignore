@@ -1,0 +1,7 @@
+# Fotos originais em alta resolução (o site usa as versões otimizadas em assets/img/)
+imgs/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
