@@ -67,13 +67,16 @@ if ("IntersectionObserver" in window) {
 }
 
 // ===== Formulário de contato =====
-// Por enquanto envia a mensagem pelo WhatsApp; pode ser trocado por um serviço de formulários na publicação.
+// Envia para o Netlify Forms (painel + notificação por e-mail) e oferece continuar a conversa no WhatsApp.
 const form = document.getElementById("contactForm");
 const status = document.getElementById("formStatus");
+const submitBtn = document.getElementById("formSubmit");
+const whatsappBtn = document.getElementById("formWhatsapp");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const data = Object.fromEntries(new FormData(form));
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
   let valid = true;
 
   ["nome", "contato", "desafio"].forEach((name) => {
@@ -97,10 +100,37 @@ form.addEventListener("submit", (e) => {
     `Desafio: ${data.desafio.trim()}`,
   ].filter((line, i, arr) => line !== "" || arr[i - 1] !== "").join("\n");
 
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
-  status.textContent = "Abrimos o WhatsApp com sua mensagem. É só enviar!";
-  status.className = "form__status is-success";
-  form.reset();
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Enviando…";
+  status.textContent = "";
+  status.className = "form__status";
+
+  try {
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    form.querySelectorAll(".field").forEach((field) => { field.hidden = true; });
+    submitBtn.hidden = true;
+    status.textContent = "Mensagem recebida! Vou analisar seu desafio e retorno em breve. Se preferir, continue a conversa pelo WhatsApp.";
+    status.className = "form__status is-success";
+    whatsappBtn.href = whatsappUrl;
+    whatsappBtn.hidden = false;
+  } catch {
+    // Falhou o envio: o WhatsApp vira o caminho principal para não perder o contato
+    status.textContent = "Não foi possível enviar agora. Você pode mandar a mesma mensagem pelo WhatsApp:";
+    status.className = "form__status is-error";
+    whatsappBtn.href = whatsappUrl;
+    whatsappBtn.hidden = false;
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Enviar mensagem";
+  }
 });
 
 form.querySelectorAll("input, textarea").forEach((el) =>
