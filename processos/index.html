@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-book: 5 processos que toda empresa precisa automatizar — Miquéias Oliveira</title>
+  <meta name="description" content="Um guia direto para descobrir quais tarefas da sua empresa são trabalho de máquina e qual automatizar primeiro. E-book por R$ 10.">
+  <link rel="canonical" href="https://miqueiasoliveira.netlify.app/processos/">
+  <meta name="author" content="Miquéias Oliveira">
+  <meta name="theme-color" content="#0a0b0d">
+
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Miquéias Oliveira">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://miqueiasoliveira.netlify.app/processos/">
+  <meta property="og:title" content="5 processos que toda empresa precisa automatizar — e-book por R$ 10">
+  <meta property="og:description" content="Descubra qual tarefa repetitiva da sua empresa automatizar primeiro.">
+  <meta property="og:image" content="https://miqueiasoliveira.netlify.app/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/processos/processos.css">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    if (location.hostname === "miqueiasoliveira.netlify.app") {
+      const ga = document.createElement("script");
+      ga.async = true;
+      ga.src = "https://www.googletagmanager.com/gtag/js?id=G-YJMD4ZSSD9";
+      document.head.appendChild(ga);
+      gtag("js", new Date());
+      gtag("config", "G-YJMD4ZSSD9");
+    }
+  </script>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 112 64">
+      <path d="M60 52 C 36 60, 8 58, 5 46 C 3 38, 12 28, 24 22" fill="none" stroke="#0052ff" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M30 14 C 50 5, 76 2, 86 9" fill="none" stroke="#0052ff" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M17 50 V17 L33 31 L49 17 V50" fill="none" stroke="currentColor" stroke-width="8"/>
+      <circle cx="73" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="6"/>
+      <circle cx="73" cy="34" r="8" fill="none" stroke="#0052ff" stroke-width="3.5"/>
+      <circle cx="73" cy="34" r="2.6" fill="#0052ff"/>
+      <path d="M75 32 L97 10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M90.5 13.5 L91.5 4.5 L96.5 1.5 L95.5 9 Z M94 17 L103 16 L106 11 L98.5 12 Z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <header class="nav nav--sales">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand" aria-label="Miquéias Oliveira — site principal">
+        <svg class="nav__logo" aria-hidden="true"><use href="#logo"/></svg>
+        <span>Miquéias Oliveira</span>
+      </a>
+      <a href="#oferta" class="btn btn--primary nav__cta" data-checkout data-track="checkout-menu">Quero o e-book · R$ 10</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="sales-hero">
+      <div class="container sales-hero__grid">
+        <div>
+          <span class="badge badge--dark">E-book · para donos e gestores de empresa</span>
+          <h1 class="display-mega">5 processos que toda empresa precisa automatizar</h1>
+          <p class="sales-hero__sub">Você comentou <strong style="color:#fff">PROCESSO</strong>. Este é o primeiro passo: um guia direto para descobrir quais tarefas da sua empresa são trabalho de máquina e qual delas automatizar primeiro.</p>
+          <div class="sales-hero__actions">
+            <a href="#oferta" class="btn btn--primary btn--lg" data-checkout data-track="checkout-hero">Quero o e-book por R$ 10</a>
+            <span class="price-inline">Pagamento único de <span class="mono">R$ 10</span></span>
+          </div>
+          <ul class="sales-meta">
+            <li>PDF para ler no celular</li>
+            <li>Leitura de uma tarde</li>
+            <li>Acesso imediato após o pagamento</li>
+          </ul>
+        </div>
+        <div class="cover-wrap" aria-hidden="true">
+          <div class="cover">
+            <span class="cover__tag">E-book · Miquéias Oliveira</span>
+            <span class="cover__num mono">5</span>
+            <span class="cover__title">processos que toda empresa precisa automatizar</span>
+            <div class="cover__rotors"><span class="rotor"></span><span class="rotor"></span><span class="rotor"></span></div>
+            <span class="cover__author">@miqueias_dev</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Dores ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="badge">O problema</span>
+          <h2 class="display-md">Gente boa presa em trabalho de máquina.</h2>
+          <p class="section__lead">Alan Turing não quebrou a Enigma testando combinação por combinação. Ele percebeu que aquilo era trabalho repetitivo e entregou para uma máquina. Na sua empresa, o trabalho repetitivo tem outra cara:</p>
+        </div>
+        <div class="pains reveal">
+          <div class="pain"><span class="pain__count mono">3×</span><p>Alguém copia pedido do WhatsApp para a planilha, um por um, todo dia.</p></div>
+          <div class="pain"><span class="pain__count mono">3×</span><p>A mesma nota fiscal é conferida à mão contra o pedido e contra o extrato.</p></div>
+          <div class="pain"><span class="pain__count mono">3×</span><p>Toda segunda alguém monta o mesmo relatório, juntando dados de quatro lugares.</p></div>
+          <div class="pain"><span class="pain__count mono">3×</span><p>Cliente atrasou o pagamento e ninguém lembrou de cobrar.</p></div>
+          <div class="pain"><span class="pain__count mono">3×</span><p>O orçamento foi enviado, o cliente sumiu e ninguém voltou a chamar.</p></div>
+          <div class="pain"><span class="pain__count mono">3×</span><p>A equipe responde as mesmas cinco perguntas no atendimento, o dia inteiro.</p></div>
+        </div>
+        <p class="callout reveal">A regra que eu uso: <strong>se uma tarefa se repete mais de três vezes, ela é candidata a automação.</strong> O e-book mostra quais são as cinco que aparecem em quase toda empresa e como escolher por onde começar.</p>
+      </div>
+    </section>
+
+    <!-- ===== Os 5 processos ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="badge">O que você vai encontrar</span>
+          <h2 class="display-md">Os 5 processos, um por capítulo.</h2>
+          <p class="section__lead">Cada capítulo traz o sinal de que o processo está custando caro, um exemplo de empresa pequena e o que muda depois de automatizar.</p>
+        </div>
+        <div class="procs">
+          <article class="card proc reveal">
+            <span class="proc__num mono">01</span>
+            <div>
+              <h3 class="title-lg">Entrada de pedidos</h3>
+              <p class="proc__sign"><span class="proc__label">Sinal de alerta</span>Pedido chega pelo WhatsApp, Instagram ou e-mail e alguém digita tudo de novo numa planilha.</p>
+            </div>
+            <p class="proc__change"><span class="proc__label">O que muda</span>O pedido entra uma vez só, já organizado, e a equipe para de digitar e de errar quantidade e endereço.</p>
+          </article>
+          <article class="card proc reveal">
+            <span class="proc__num mono">02</span>
+            <div>
+              <h3 class="title-lg">Cobrança e contas a receber</h3>
+              <p class="proc__sign"><span class="proc__label">Sinal de alerta</span>Você só descobre que um cliente atrasou quando olha o extrato, e cobrar depende de alguém lembrar.</p>
+            </div>
+            <p class="proc__change"><span class="proc__label">O que muda</span>Lembrete antes do vencimento, aviso no atraso e baixa do pagamento sem ninguém conferir linha por linha.</p>
+          </article>
+          <article class="card proc reveal">
+            <span class="proc__num mono">03</span>
+            <div>
+              <h3 class="title-lg">Relatórios e indicadores</h3>
+              <p class="proc__sign"><span class="proc__label">Sinal de alerta</span>O relatório de toda segunda leva horas para montar e, quando fica pronto, os números já são da semana passada.</p>
+            </div>
+            <p class="proc__change"><span class="proc__label">O que muda</span>Um painel que se atualiza sozinho. A segunda-feira passa a ser para decidir, não para copiar e colar.</p>
+          </article>
+          <article class="card proc reveal">
+            <span class="proc__num mono">04</span>
+            <div>
+              <h3 class="title-lg">Acompanhamento de vendas</h3>
+              <p class="proc__sign"><span class="proc__label">Sinal de alerta</span>Orçamentos enviados sem retorno, e o controle de quem chamar fica na cabeça do vendedor.</p>
+            </div>
+            <p class="proc__change"><span class="proc__label">O que muda</span>Cada oportunidade tem dono e próxima data. O sistema avisa quem precisa de retorno hoje.</p>
+          </article>
+          <article class="card proc reveal">
+            <span class="proc__num mono">05</span>
+            <div>
+              <h3 class="title-lg">Atendimento e agendamento</h3>
+              <p class="proc__sign"><span class="proc__label">Sinal de alerta</span>A equipe responde preço, horário e endereço o dia todo, e marca horário trocando mensagem até achar uma brecha.</p>
+            </div>
+            <p class="proc__change"><span class="proc__label">O que muda</span>As perguntas repetidas têm resposta na hora, o cliente escolhe o horário e a equipe cuida só do que precisa de gente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Calculadora ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="badge">Faça a conta</span>
+          <h2 class="display-md">Quanto custa o trabalho de máquina na sua empresa?</h2>
+          <p class="section__lead">Mexa nos valores. É uma estimativa simples, a mesma que o e-book ensina a fazer para cada processo.</p>
+        </div>
+        <div class="calc reveal">
+          <div class="calc__inputs">
+            <div class="calc__field">
+              <label for="horas">Horas por semana em tarefas repetitivas <output class="mono" id="horasOut" for="horas">10 h</output></label>
+              <input type="range" id="horas" min="1" max="60" value="10">
+            </div>
+            <div class="calc__field">
+              <label for="pessoas">Pessoas fazendo esse tipo de tarefa <output class="mono" id="pessoasOut" for="pessoas">2</output></label>
+              <input type="range" id="pessoas" min="1" max="20" value="2">
+            </div>
+            <div class="calc__field">
+              <label for="custo">Custo de uma hora de trabalho <output class="mono" id="custoOut" for="custo">R$ 25</output></label>
+              <input type="range" id="custo" min="10" max="150" step="5" value="25">
+            </div>
+          </div>
+          <div class="calc__result" aria-live="polite">
+            <span>Por ano, isso custa cerca de</span>
+            <span class="calc__big mono" id="anoOut">R$ 24.000</span>
+            <div class="calc__row"><span>Por mês</span><span class="mono" id="mesOut">R$ 2.000</span></div>
+            <div class="calc__row"><span>Horas por ano</span><span class="mono" id="horasAnoOut">960 h</span></div>
+            <p class="calc__note">Considera 4 semanas por mês e 48 semanas por ano. O e-book custa R$ 10.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Conteúdo + para quem é ===== -->
+    <section class="section section--soft">
+      <div class="container inside">
+        <div class="reveal">
+          <span class="badge">Dentro do e-book</span>
+          <h2 class="display-sm" style="margin:20px 0 32px">Além dos 5 processos, você leva:</h2>
+          <ul class="checklist">
+            <li><strong>O teste das 3 vezes:</strong> um roteiro de uma semana para listar tudo o que se repete na sua empresa.</li>
+            <li><strong>A matriz de prioridade:</strong> como cruzar tempo gasto com facilidade de automatizar e achar o primeiro projeto.</li>
+            <li><strong>Ferramentas por tamanho de empresa:</strong> quando resolver com ferramenta pronta, quando conectar sistemas e quando vale um sistema próprio.</li>
+            <li><strong>A conta do custo:</strong> o modelo para calcular quanto cada processo manual custa por mês.</li>
+            <li><strong>Erros comuns:</strong> o que faz uma automação dar errado antes mesmo de começar.</li>
+          </ul>
+        </div>
+        <div class="fit reveal">
+          <div class="card">
+            <h3 class="title-md">É para você se</h3>
+            <ul class="checklist">
+              <li>Você tem uma empresa pequena ou média e sente que a equipe vive apagando incêndio.</li>
+              <li>Sabe que dá para automatizar alguma coisa, mas não sabe por onde começar.</li>
+              <li>Quer entender o assunto antes de contratar alguém ou comprar ferramenta.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="title-md">Não é para você se</h3>
+            <ul class="nolist">
+              <li>Procura um tutorial técnico de programação.</li>
+              <li>Espera que uma ferramenta resolva tudo sem mudar nenhum processo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Autor ===== -->
+    <section class="section">
+      <div class="container author">
+        <div class="author__photo reveal">
+          <img src="/assets/img/miqueias-sobre.jpg" alt="Miquéias Oliveira" width="640" height="800" loading="lazy">
+        </div>
+        <div class="author__text reveal">
+          <span class="badge">Quem escreveu</span>
+          <h2 class="display-sm">Miquéias Oliveira</h2>
+          <p>Sou desenvolvedor de soluções tecnológicas. Construo sistemas, automações e integrações para empresas que querem parar de depender de planilha, copiar e colar e memória da equipe.</p>
+          <p>Escrevi este e-book com o que eu pergunto na primeira conversa com qualquer cliente: <strong>o que se repete aqui, quanto isso custa e o que dá para resolver primeiro.</strong> Se depois de ler você quiser ajuda para tirar o projeto do papel, é só me chamar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Oferta ===== -->
+    <section class="contact" id="oferta">
+      <div class="container offer">
+        <div class="reveal">
+          <h2 class="display-md">Comece pelo processo certo.</h2>
+          <p style="font-size:18px;max-width:480px">Automatizar a coisa errada custa tempo e dinheiro. Por R$ 10, você descobre qual tarefa da sua empresa vale a pena entregar para a máquina primeiro.</p>
+        </div>
+        <div class="offer-card reveal">
+          <span class="badge" style="justify-self:start">E-book em PDF</span>
+          <h3 class="title-lg">5 processos que toda empresa precisa automatizar</h3>
+          <div class="offer-card__price"><span class="mono">R$ 10</span><small>pagamento único</small></div>
+          <ul class="checklist">
+            <li>Os 5 processos explicados com exemplos</li>
+            <li>Teste das 3 vezes e matriz de prioridade</li>
+            <li>Modelo para calcular o custo de cada processo</li>
+            <li>Acesso imediato, no celular ou no computador</li>
+          </ul>
+          <a href="#oferta" class="btn btn--primary btn--lg btn--block" data-checkout data-track="checkout-oferta">Quero o e-book por R$ 10</a>
+          <p class="offer-card__safe">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            <span>Pagamento por Pix ou cartão em ambiente seguro. Se não gostar, você tem 7 dias para pedir o reembolso.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="badge">Perguntas frequentes</span>
+          <h2 class="display-md">Antes de comprar</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Preciso saber programar?</summary>
+            <p>Não. O e-book foi escrito para quem toca a empresa, não para quem programa. Ele ajuda a enxergar o problema e a decidir o primeiro passo.</p>
+          </details>
+          <details>
+            <summary>Como eu recebo o e-book?</summary>
+            <p>Logo depois que o pagamento é confirmado, você recebe o link para baixar o PDF no e-mail informado na compra. No Pix, a confirmação costuma levar poucos minutos.</p>
+          </details>
+          <details>
+            <summary>Serve para a minha empresa?</summary>
+            <p>Os cinco processos aparecem em comércio, serviços, clínicas, escritórios e indústria pequena. Se a sua empresa tem clientes, pedidos e alguém controlando isso em planilha, serve.</p>
+          </details>
+          <details>
+            <summary>E se eu quiser ajuda para automatizar?</summary>
+            <p>Depois de ler, você vai saber exatamente o que pedir. Se quiser que eu desenvolva a solução, <a href="/#contato">fale comigo pelo site</a>.</p>
+          </details>
+          <details>
+            <summary>E se eu não gostar?</summary>
+            <p>Você tem 7 dias a partir da compra para pedir o reembolso, sem precisar explicar o motivo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="/" class="nav__brand"><svg class="nav__logo" aria-hidden="true"><use href="#logo"/></svg><span>Miquéias Oliveira</span></a>
+      <nav class="footer__links" aria-label="Rodapé">
+        <a href="/">Site principal</a><a href="https://www.instagram.com/miqueias_dev/" target="_blank" rel="noopener">Instagram</a><a href="/#contato">Contato</a>
+      </nav>
+      <p class="footer__legal">© <span id="year">2026</span> Miquéias Oliveira · Desenvolvedor de Soluções Tecnológicas</p>
+    </div>
+  </footer>
+
+  <div class="sticky-buy" id="stickyBuy" aria-hidden="true">
+    <span class="sticky-buy__price">E-book<br><span class="mono">R$ 10</span></span>
+    <a href="#oferta" class="btn btn--primary" data-checkout data-track="checkout-barra" tabindex="-1">Quero o e-book</a>
+  </div>
+
+  <script>
+    /* ===== Link de pagamento =====
+       Cole aqui o link do checkout (Kiwify, Hotmart, Mercado Pago etc.).
+       Enquanto estiver vazio, os botões levam até a seção da oferta. */
+    const CHECKOUT_URL = "https://pay.kiwify.com.br/Xc9AA6R";
+
+    // Repassa os parâmetros da URL (utm_source etc.) para o checkout, para saber de onde veio a venda
+    document.querySelectorAll("[data-checkout]").forEach((a) => {
+      if (CHECKOUT_URL) {
+        const url = new URL(CHECKOUT_URL);
+        new URLSearchParams(location.search).forEach((v, k) => url.searchParams.set(k, v));
+        a.href = url.toString();
+        a.target = "_blank";
+        a.rel = "noopener";
+      }
+      a.addEventListener("click", () => {
+        gtag("event", "begin_checkout", { currency: "BRL", value: 10, items: [{ item_name: "E-book 5 processos" }], botao: a.dataset.track });
+      });
+    });
+
+    // Calculadora
+    const brl = (n) => "R$ " + Math.round(n).toLocaleString("pt-BR");
+    const $ = (id) => document.getElementById(id);
+    function calc() {
+      const h = +$("horas").value, p = +$("pessoas").value, c = +$("custo").value;
+      const horasAno = h * p * 48;
+      $("horasOut").textContent = h + " h";
+      $("pessoasOut").textContent = p;
+      $("custoOut").textContent = brl(c);
+      $("mesOut").textContent = brl(h * p * 4 * c);
+      $("anoOut").textContent = brl(horasAno * c);
+      $("horasAnoOut").textContent = horasAno.toLocaleString("pt-BR") + " h";
+    }
+    ["horas", "pessoas", "custo"].forEach((id) => $(id).addEventListener("input", calc));
+    calc();
+
+    // Barra de compra no celular: aparece depois do hero e some na seção da oferta
+    const sticky = $("stickyBuy");
+    const hero = document.querySelector(".sales-hero");
+    const oferta = $("oferta");
+    let pastHero = false, onOffer = false;
+    const updateSticky = () => {
+      const show = pastHero && !onOffer;
+      sticky.classList.toggle("is-visible", show);
+      sticky.setAttribute("aria-hidden", String(!show));
+      sticky.querySelector("a").tabIndex = show ? 0 : -1;
+    };
+    new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting; updateSticky(); }).observe(hero);
+    new IntersectionObserver(([e]) => { onOffer = e.isIntersecting; updateSticky(); }).observe(oferta);
+
+    // Entrada suave das seções
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+    $("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

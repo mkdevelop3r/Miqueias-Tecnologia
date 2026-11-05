@@ -5,3 +5,9 @@ imgs/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Conteúdo do Instagram (não publicar no site)
+instagram/
+
+# Fonte e PDF do e-book pago (não publicar no site)
+ebook/
